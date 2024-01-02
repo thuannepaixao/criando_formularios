@@ -1,0 +1,228 @@
+* {
+  /* zerando a margem de todos os elementos  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* adiciona a cor do body  */
+  background: #E5E5E5;
+}
+
+body::before{
+  /* adiciona cor antes do body  */
+  content: '';
+  width: 100%;
+  height: 436px;
+  
+  /* adicionando um display ou bloco antes do body  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* adicionando o display atrás da página do texto  */
+  z-index: -1;
+  background: #535971;
+}
+
+.page {
+  /* largura e alinhamento ao centro da página  */
+  width: 750px;
+  margin: auto;
+}
+
+header h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 48px;
+  line-height: normal;
+  font-weight: 400;
+  color: #FFF;
+  
+  width: 163px;
+  margin-top: 140px;
+  margin-bottom: 18px;
+}
+
+header p { 
+  font-size: 20px;
+  line-height: normal;
+
+  color: #FFF;
+
+  width: 417px;
+  margin-bottom: 58px;
+}
+
+form {
+  margin-top: 58px;
+  border-radius: 20px 20px 0px 0px;
+  background: #FFF;
+  /* altura mínima do formulário  */
+  min-height: 300px;
+
+  /* preenchimento interno, configuração de orientação e espaçamento  */
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  /* organizando título e caixa de texto em colunas  */
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset legend {
+  font-family: Staatliches, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px; /* 141.667% */
+  color: #535971;
+  
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+  
+}
+
+fieldset #mentoring-schedules {
+  font-family: Staatliches, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px; /* 141.667% */
+  color: #535971;
+  
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+  
+}
+
+
+.col-2 {
+  /* configuração da seção nome e sobrenome em 2 colunas  */
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 > div:nth-child(1) {
+  /* primeiro nível da div para configurar o filho número um  */
+  width: 50%;
+}
+
+.col-2 > div:nth-child(2) {
+  /* primeiro nível da div para configurar o filho número um  */
+  width: 50%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 24px; /* 171.429% */
+
+  color: #4E4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span { 
+  margin-left: 12px;
+  
+  font-size: 12px;
+  line-height: 20px; /* 166.667% */
+
+  color: #a9a7af;
+}
+
+.input-wrapper label span:hover {
+  /* torna a cor das letras mais escuras ao passar o mouse  */
+  color: #6c6a71;
+}
+
+.input-wrapper input {
+  /* todas as configurações das entradas dos inputs  */
+  background: #FAFAFC;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  
+  height: 56px;
+  
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #6c6a71;
+}
+
+.col-3FirstMentoring {
+  /* configuração da seção primeira mentoria  */
+  display: flex;
+  gap: 20px;
+}
+
+.col-3FirstMentoring > div:nth-child(1) {
+  /* primeiro nível da div para configurar o filho número um  */
+  width: 75%;
+}
+
+.col-3SecondMentoring {
+  /* configuração da seção primeira mentoria  */
+  display: flex;
+  gap: 20px;
+}
+
+.col-3SecondMentoring > div:nth-child(1) {
+  /* primeiro nível da div para configurar o filho número um  */
+  width: 75%;
+}
+
+footer {  
+  background: #535971;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 71px;
+
+  margin-bottom: 300px;
+
+  border-radius: 0px 0px 20px 20px;
+}
+
+footer .button {
+  height: 55px;
+  border-radius: 20px;
+  border: 0;
+  background: #FF5374;
+  
+  font-family: Staatliches;
+
+  font-size: 20px;  
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+
+  color: #FFF;
+}
+
+footer .button:hover {
+  background: #c41f40;
+}
+
+input:invalid {
+  border: 1px solid #FF1010;
+}
